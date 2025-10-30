@@ -51,4 +51,11 @@ Clone the repository and install the dependencies:
 
 # 2. Install dependencies
 npm install
+
+# 3. Check Build
+npm run build
+
+# 4. TO Run The Project
+npm run dev
+
 ```
