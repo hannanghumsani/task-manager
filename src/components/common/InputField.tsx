@@ -5,7 +5,7 @@ interface InputFieldProps
   extends React.InputHTMLAttributes<HTMLInputElement | HTMLTextAreaElement> {
   name: keyof typeof FIELD_LABELS;
   label?: string;
-  isInvalid: boolean;
+  isInvalid: boolean | undefined;
   validationMessage?: string;
   as?: "input" | "textarea";
 }

@@ -5,10 +5,10 @@ import clsx from "clsx";
 
 interface SelectFieldProps
   extends React.SelectHTMLAttributes<HTMLSelectElement> {
-  name: keyof typeof FIELD_LABELS | "status" | "priority"; // Extend keys for Select
+  name: any;
   label?: string;
-  options: { value: string; label: string }[];
-  isInvalid: boolean;
+  options: { value: string | number; label: any }[];
+  isInvalid: boolean | undefined;
   validationMessage?: string;
 }
 

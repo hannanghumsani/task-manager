@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { PLACEHOLDERS } from "@/language/constants";
 
 interface DebouncedInputProps
-  extends React.InputHTMLAttributes<HTMLInputElement> {
+  extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "onChange"> {
   value: string | number;
-  onChange: (value: string | number) => void;
+  onChange: any;
   debounce?: number;
 }
 

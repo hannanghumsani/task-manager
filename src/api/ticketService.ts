@@ -15,7 +15,7 @@ const getInitialData = (): Ticket[] => {
   }
   // Initialize with mock data if localStorage is empty or corrupt
   localStorage.setItem(STORAGE_KEY, JSON.stringify(INITIAL_TICKETS));
-  return INITIAL_TICK;
+  return INITIAL_TICKETS;
 };
 
 const saveTickets = (tickets: Ticket[]): void => {

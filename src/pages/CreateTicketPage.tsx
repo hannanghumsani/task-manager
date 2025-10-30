@@ -32,7 +32,7 @@ const CreateTicketPage: React.FC = () => {
         onSubmit={(values, { setSubmitting, resetForm }) => {
           setSubmitting(true);
           // Omit status (it's set to 'Open' by the service)
-          const { status, ...dataToCreate } = values;
+          const { status, ...dataToCreate }: any = values;
           createTicket(dataToCreate as any);
           resetForm();
           setSubmitting(false);
